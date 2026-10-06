@@ -1,0 +1,998 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+    CodeFile="MasterPage.master.cs"
+    Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Shail Solar Energy Solutions provides reliable solar energy, rooftop solar, residential solar, solar pump, hybrid solar and maintenance solutions for homes, businesses and industries.">
+
+    <meta name="keywords"
+        content="Shail Solar Energy Solutions, Solar Panel, Solar Energy, Rooftop Solar, Residential Solar, Solar Pump, Hybrid Solar, Solar Installation, Lucknow">
+
+    <meta name="author"
+        content="Shail Solar Energy Solutions">
+
+    <title>Shail Solar Energy Solutions</title>
+
+    <link rel="icon"
+        type="image/x-icon"
+        href="assets/img/favicon.png">
+
+    <link rel="stylesheet"
+        href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet"
+        href="assets/css/all-fontawesome.min.css">
+
+    <link rel="stylesheet"
+        href="assets/css/animate.min.css">
+
+    <link rel="stylesheet"
+        href="assets/css/magnific-popup.min.css">
+
+    <link rel="stylesheet"
+        href="assets/css/owl.carousel.min.css">
+
+    <link rel="stylesheet"
+        href="assets/css/nice-select.min.css">
+
+    <link rel="stylesheet"
+        href="assets/css/style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <asp:ContentPlaceHolder
+        ID="head"
+        runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+
+
+    <div class="preloader">
+        <div class="loader-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-top">
+
+            <div class="shape">
+                <div class="shape-1"></div>
+                <div class="shape-2"></div>
+            </div>
+
+            <div class="container">
+
+                <div class="header-top-wrap">
+
+                    <div class="header-top-left">
+
+                        <div class="header-top-list">
+
+                            <ul>
+
+                                <li>
+                                    <a href="mailto:shailsolarenergy@gmail.com">
+                                        <i class="far fa-envelopes"></i>
+                                     shailsolarenergy@gmail.com
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="tel:+911234567890">
+                                        <i class="far fa-phone-volume"></i>
+                                        +91-1234567890
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="header-top-right">
+
+                        <div class="header-top-social">
+
+                            <span>Follow Us:</span>
+
+                            <a href="#"
+                               aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+
+                            <a href="#"
+                               aria-label="Twitter">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+
+                            <a href="#"
+                               aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <a href="#"
+                               aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="main-navigation">
+
+            <nav class="navbar navbar-expand-lg">
+
+                <div class="container position-relative">
+
+    
+
+                    <a class="navbar-brand"
+                       href="Default.aspx">
+
+                        <img src="assets/img/logo/logo.png"
+                             alt="Shail Solar Energy Solutions">
+
+                    </a>
+
+
+                    <div class="mobile-menu-right">
+
+                        <button class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar"
+                                aria-controls="offcanvasNavbar"
+                                aria-label="Toggle navigation">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </button>
+
+                    </div>
+
+
+
+                    <div class="offcanvas offcanvas-start"
+                         tabindex="-1"
+                         id="offcanvasNavbar"
+                         aria-labelledby="offcanvasNavbarLabel">
+
+                        <div class="offcanvas-header">
+
+                            <a href="Default.aspx"
+                               class="offcanvas-brand"
+                               id="offcanvasNavbarLabel">
+
+                                <img src="assets/img/logo/logo.png"
+                                     alt="Shail Solar Energy Solutions">
+
+                            </a>
+
+
+                            <button type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close">
+
+                                <i class="far fa-xmark"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="offcanvas-body">
+
+                            <ul class="navbar-nav justify-content-end flex-grow-1">
+
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link active"
+                                       href="Default.aspx">
+
+                                        Home
+
+                                    </a>
+
+                                </li>
+
+
+                                <li class="nav-item dropdown">
+
+                                    <a class="nav-link dropdown-toggle"
+                                       href="#"
+                                       data-bs-toggle="dropdown">
+
+                                        About Company
+
+                                    </a>
+
+                                    <ul class="dropdown-menu fade-down">
+
+                                        <li>
+                                            <a class="dropdown-item"
+                                               href="about-us.aspx">
+
+                                                About Us
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item"
+                                               href="Vision-Mission.aspx">
+
+                                                Our Vision
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item"
+                                               href="Mission.aspx">
+
+                                                Our Mission
+
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+
+                                <!-- Solar Services -->
+
+                                <li class="nav-item dropdown">
+
+                                    <a class="nav-link dropdown-toggle"
+                                       href="#"
+                                       data-bs-toggle="dropdown">
+
+                                        Solar Services
+
+                                    </a>
+
+                                    <ul class="dropdown-menu fade-down">
+
+                                        <li>
+                                            <a class="dropdown-item"
+                                               href="solar-panel-installation.aspx">
+
+                                                Solar Panel Installation
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item"
+                                               href="Rooftop-Solar-System.aspx">
+
+                                                Rooftop Solar System
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item"
+                                               href="Residential-Solar-System.aspx">
+
+                                                Residential Solar System
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item"
+                                               href="Solar-Maintenance.aspx">
+
+                                                Solar Maintenance
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item"
+                                               href="Solar-Pump-System.aspx">
+
+                                                Solar Pump System
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item"
+                                               href="HybridSolarSystem.aspx">
+
+                                                Hybrid Solar System
+
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+
+                                <!-- Gallery -->
+
+                                <li class="nav-item dropdown">
+
+                                    <a class="nav-link dropdown-toggle"
+                                       href="#"
+                                       data-bs-toggle="dropdown">
+
+                                        Gallery
+
+                                    </a>
+
+                                    <ul class="dropdown-menu fade-down">
+
+                                        <li>
+                                            <a class="dropdown-item"
+                                               href="Photo-Gallery.aspx">
+
+                                                Photo Gallery
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item"
+                                               href="Video-Gallery.aspx">
+
+                                                Video Gallery
+
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+
+
+
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link"
+                                       href="contact-us.aspx">
+
+                                        Contact Us
+
+                                    </a>
+
+                                </li>
+
+                            </ul>
+
+
+
+                            <div class="nav-right">
+
+                                <div class="nav-btn">
+
+                                    <a href="tel:+911234567890"
+                                       class="theme-btn">
+
+                                        Call Now
+
+                                        <i class="fas fa-arrow-right"></i>
+
+                                    </a>
+
+                                </div>
+
+
+                            
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+
+    </header>
+
+    <div class="search-popup">
+
+        <button class="close-search">
+
+            <span class="far fa-times"></span>
+
+        </button>
+
+        <form action="#">
+
+            <div class="form-group">
+
+                <input type="search"
+                       name="search-field"
+                       class="form-control"
+                       placeholder="Search Here..."
+                       required>
+
+                <button type="submit">
+
+                    <i class="far fa-search"></i>
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+    <form id="form1"
+          runat="server">
+
+        <div>
+
+            <asp:ContentPlaceHolder
+                ID="ContentPlaceHolder1"
+                runat="server">
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+    </form>
+
+
+    <footer class="footer-area">
+
+        <div class="footer-widget">
+
+            <div class="container">
+
+                <div class="footer-widget-wrap pt-100 pb-40">
+
+                    <div class="row g-4">
+
+
+                        <div class="col-lg-4">
+
+                            <div class="footer-widget-box about-us">
+
+                                <a href="Default.aspx"
+                                   class="footer-logo">
+
+                                    <img src="assets/img/logo/logo.png"
+                                         alt="Shail Solar Energy Solutions">
+
+                                </a>
+
+
+                                <p class="mb-4">
+
+                                    Shail Solar Energy Solutions provides
+                                    reliable and efficient solar energy
+                                    solutions for residential, commercial
+                                    and other applications.
+
+                                    Our services include solar panel
+                                    installation, rooftop solar systems,
+                                    solar pumps, hybrid solar systems
+                                    and professional maintenance.
+
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-lg-2">
+
+                            <div class="footer-widget-box list">
+
+                                <h4 class="footer-widget-title">
+
+                                    Company
+
+                                </h4>
+
+
+                                <ul class="footer-list">
+
+                                    <li>
+
+                                        <a href="Default.aspx">
+
+                                            <i class="far fa-angle-double-right"></i>
+
+                                            Home
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a href="about-us.aspx">
+
+                                            <i class="far fa-angle-double-right"></i>
+
+                                            About Us
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a href="Vision-Mission.aspx">
+
+                                            <i class="far fa-angle-double-right"></i>
+
+                                            Our Vision
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a href="Mission.aspx">
+
+                                            <i class="far fa-angle-double-right"></i>
+
+                                            Our Mission
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a href="Photo-Gallery.aspx">
+
+                                            <i class="far fa-angle-double-right"></i>
+
+                                            Photo Gallery
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a href="contact-us.aspx">
+
+                                            <i class="far fa-angle-double-right"></i>
+
+                                            Contact Us
+
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= SERVICES ================= -->
+
+                        <div class="col-12 col-lg-2">
+
+                            <div class="footer-widget-box list">
+
+                                <h4 class="footer-widget-title">
+
+                                    Our Services
+
+                                </h4>
+
+
+                                <ul class="footer-list">
+
+
+                                    <li>
+
+                                        <a href="solar-panel-installation.aspx">
+
+                                            <i class="far fa-angle-double-right"></i>
+
+                                            Solar Panel Installation
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a href="Rooftop-Solar-System.aspx">
+
+                                            <i class="far fa-angle-double-right"></i>
+
+                                            Rooftop Solar System
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a href="Residential-Solar-System.aspx">
+
+                                            <i class="far fa-angle-double-right"></i>
+
+                                            Residential Solar System
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a href="Solar-Maintenance.aspx">
+
+                                            <i class="far fa-angle-double-right"></i>
+
+                                            Solar Maintenance
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a href="Solar-Pump-System.aspx">
+
+                                            <i class="far fa-angle-double-right"></i>
+
+                                            Solar Pump System
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a href="HybridSolarSystem.aspx">
+
+                                            <i class="far fa-angle-double-right"></i>
+
+                                            Hybrid Solar System
+
+                                        </a>
+
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= CONTACT ================= -->
+
+                        <div class="col-lg-4">
+
+                            <div class="footer-widget-box">
+
+                                <h4 class="footer-widget-title">
+
+                                    Get In Touch
+
+                                </h4>
+
+
+                                <ul class="footer-contact">
+
+
+                                    <!-- Address -->
+
+                                    <li>
+
+                                        <div class="icon">
+
+                                            <i class="far fa-location-dot"></i>
+
+                                        </div>
+
+                                        <div class="content">
+
+                                            <h6>Our Address</h6>
+
+                                            <p>
+
+                                           Sh 3/40-T-R, Natiniya Dai Road, Nawalpur, Varanasi, Uttar Pradesh – 221003, India
+
+                                            </p>
+
+                                        </div>
+
+                                    </li>
+
+
+                                    <!-- Phone -->
+
+                                    <li>
+
+                                        <div class="icon">
+
+                                            <i class="far fa-phone"></i>
+
+                                        </div>
+
+                                        <div class="content">
+
+                                            <h6>Call Us</h6>
+
+                                            <a href="tel:+911234567890">
+
+                                                +91-1234567890
+
+                                            </a>
+
+                                        </div>
+
+                                    </li>
+
+
+                                    <!-- Email -->
+
+                                    <li>
+
+                                        <div class="icon">
+
+                                            <i class="far fa-envelope"></i>
+
+                                        </div>
+
+                                        <div class="content">
+
+                                            <h6>Mail Us</h6>
+
+                                            <a href="mailto:shailsolarenergy@gmail.com">
+
+                                               shailsolarenergy@gmail.com
+
+                                            </a>
+
+                                        </div>
+
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= COPYRIGHT ================= -->
+
+        <div class="container">
+
+            <div class="copyright">
+
+                <div class="row">
+
+
+                    <div class="col-md-6 align-self-center">
+
+                        <p class="copyright-text">
+
+                            &copy; Copyright
+
+                            <span id="date"></span>
+
+                            <a href="Default.aspx">
+
+                                Shail Solar Energy Solutions
+
+                            </a>
+
+                            All Rights Reserved.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-md-6 align-self-center">
+
+                        <p class="copyright-text rights">
+
+                            Designed &amp; Developed by
+
+                            <a href="https://www.sigmasoftwares.org/"
+                               title="SigmaIT Software Designers"
+                               target="_blank">
+
+                                SigmaIT Software Designers Pvt. Ltd.
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <a href="https://wa.me/911234567890"
+       class="whatsapp"
+       target="_blank"
+       aria-label="Chat on WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+       <style>
+
+        .whatsapp {
+            display: inline-block;
+            position: fixed;
+            right: 33px;
+            bottom: 84px;
+            background: limegreen;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: #fff !important;
+            text-align: center;
+            line-height: 65px;
+            z-index: 99999999999;
+            animation: ripple-out 1.5s ease-in-out infinite;
+            box-shadow: 0 5px 20px rgba(0,0,0,.18);
+        }
+
+        .whatsapp i {
+            font-size: 35px;
+        }
+
+        @keyframes ripple-out {
+
+            0% {
+                box-shadow:
+                    0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+
+            100% {
+                box-shadow:
+                    0 0 0 14px rgba(37, 211, 102, 0);
+            }
+
+        }
+
+        @media(max-width:767px) {
+
+            .whatsapp {
+                right: 18px;
+                bottom: 80px;
+                width: 48px;
+                height: 48px;
+                line-height: 62px;
+            }
+
+            .whatsapp i {
+                font-size: 32px;
+            }
+
+        }
+
+    </style>
+
+
+    <a href="#"
+       id="scroll-top">
+
+        <i class="far fa-arrow-up"></i>
+
+    </a>
+
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <script src="assets/js/modernizr.min.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <script src="assets/js/jquery.appear.min.js"></script>
+
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script src="assets/js/counter-up.js"></script>
+
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
